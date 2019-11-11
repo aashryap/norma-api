@@ -44,7 +44,6 @@ class Route {
   }
 
   checkAuth (req, res, next, isAuth, scope) {
-    console.log('--------------------', isAuth)
     if (isAuth) {
       authenticationMiddleware.authenticate(req, res, next, scope)
     } else {

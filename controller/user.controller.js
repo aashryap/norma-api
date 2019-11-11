@@ -25,7 +25,6 @@ class UserController {
       email,
       password
     }).then((data) => {
-      console.log('DATA ', data)
       const user = {
         id: data._id,
         name: data.name,
